@@ -1,17 +1,21 @@
 {
-  "name": "interactive-card",
+  "name": "frontend",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@testing-library/jest-dom": "^5.17.0",
-    "@testing-library/react": "^13.4.0",
-    "@testing-library/user-event": "^13.5.0",
-    "i18next-browser-languagedetector": "^7.2.0",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-i18next": "^13.5.0",
-    "react-scripts": "5.0.1",
-    "web-vitals": "^2.1.4"
+    "@testing-library/jest-dom": "^5.14.1",
+    "@testing-library/react": "^11.2.7",
+    "@testing-library/user-event": "^12.8.3",
+    "axios": "^0.21.1",
+    "final-form": "^4.20.2",
+    "payment": "^2.4.6",
+    "react": "^17.0.2",
+    "react-credit-cards": "^0.8.3",
+    "react-dom": "^17.0.2",
+    "react-final-form": "^6.5.3",
+    "react-scripts": "^4.0.3",
+    "styled-components": "^5.3.1",
+    "web-vitals": "^1.1.2"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -36,5 +40,6 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "proxy": "http://localhost:5000"
 }
