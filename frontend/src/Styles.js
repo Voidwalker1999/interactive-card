@@ -3,8 +3,8 @@ import styled, { css } from "styled-components";
 const btn = (light, dark) => css`
   white-space: nowrap;
   display: inline-block;
-  border-radius: 5px;
-  padding: 5px 15px;
+  border-radius: 8px;
+  padding: 6px 20px;
   font-size: 16px;
   color: white;
   &:visited {
@@ -28,7 +28,7 @@ const btn = (light, dark) => css`
 `;
 
 const btnDefault = css`
-  ${btn("#ffffff", "#d5d5d5")} color: #555;
+  ${btn("#ffffff", "#F5B7B1")} color: #CB4335;
 `;
 
 const btnPrimary = btn("#4f93ce", "#285f8f");
@@ -36,6 +36,7 @@ const btnDanger = btn("#e27c79", "#c9302c");
 
 export default styled.div`
   font-family: sans-serif;
+  margin-top: 100px;
 
   h1 {
     text-align: center;

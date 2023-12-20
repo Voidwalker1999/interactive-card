@@ -60,7 +60,7 @@ function App() {
 
   return (
     <Styles>
-      <br></br>
+      <h2>Enter Your Credit or Debit Card Details</h2>
       <Form
         onSubmit={onSubmit}
         render={({
@@ -109,7 +109,7 @@ function App() {
                   name="name"
                   component="input"
                   type="text"
-                  placeholder="Name"
+                  placeholder="Name on Card"
                 />
               </div>
               <div>
@@ -118,7 +118,7 @@ function App() {
                   component="input"
                   type="text"
                   pattern="\d\d/\d\d"
-                  placeholder="Valid Thru"
+                  placeholder="Expiration Date"
                   format={formatExpirationDate}
                 />
                 <Field
@@ -126,7 +126,7 @@ function App() {
                   component="input"
                   type="text"
                   pattern="\d{3,4}"
-                  placeholder="CVC"
+                  placeholder="Security Code"
                   format={formatCVC}
                 />
               </div>
