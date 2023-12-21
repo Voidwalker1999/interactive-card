@@ -3,6 +3,7 @@ import { render } from "react-dom";
 import Styles from "./Styles";
 import { Form, Field } from "react-final-form";
 import Card from "./Card";
+// import "./index.css";
 import {
   formatCreditCardNumber,
   formatCVC,
