@@ -3,7 +3,7 @@ import { render } from "react-dom";
 import Styles from "./Styles";
 import { Form, Field } from "react-final-form";
 import Card from "./Card";
-// import "./index.css";
+import "./index.css";
 import {
   formatCreditCardNumber,
   formatCVC,
@@ -59,8 +59,18 @@ function App() {
     } catch (error) {}
   };
 
+  const goBack = () => {
+    window.history.back();
+  };
+
   return (
     <Styles>
+      <button
+        id="go-back-button"
+        onClick={goBack}
+      >
+        Go Back
+      </button>
       <h2>Enter Your Credit or Debit Card Details</h2>
       <Form
         onSubmit={onSubmit}

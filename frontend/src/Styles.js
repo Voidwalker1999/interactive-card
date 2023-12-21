@@ -36,7 +36,7 @@ const btnDanger = btn("#e27c79", "#c9302c");
 
 export default styled.div`
   font-family: sans-serif;
-  margin-top: 100px;
+  margin-top: 20px;
 
   h1 {
     text-align: center;
@@ -45,7 +45,7 @@ export default styled.div`
 
   h2 {
     text-align: center;
-    color: #222;
+    color: #fff;
   }
 
   & > div {
