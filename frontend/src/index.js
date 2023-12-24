@@ -92,6 +92,8 @@ function App() {
                 focused={active}
               />
               <div>
+                {/* <label htmlFor="amount">Amount:</label>
+                <span id="amount">{values.amount}</span> */}
                 <Field
                   name="amount"
                   component="input"

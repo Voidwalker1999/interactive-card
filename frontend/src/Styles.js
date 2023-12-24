@@ -38,6 +38,20 @@ export default styled.div`
   font-family: sans-serif;
   margin-top: 20px;
 
+  button#go-back-button {
+    color: white;
+    border: 2px solid;
+    border-radius: 15px;
+    background-color: transparent;
+    backdrop-filter: blur(5px);
+    transition: background-color 0.3s ease;
+  }
+  
+  button#go-back-button:hover {
+    background-color: rgba(255, 3, 3, 0.5);
+  }
+
+  
   h1 {
     text-align: center;
     color: #222;
@@ -79,11 +93,14 @@ export default styled.div`
     text-align: left;
     max-width: 500px;
     margin: 10px auto;
-    border: 1px solid #ccc;
+    border: 1px solid rgba(0, 0, 0, 0.3);
     padding: 20px;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
-    border-radius: 3px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    box-sizing: border-box;
     position: relative;
+    background-color: transparent;
+    backdrop-filter: blur(15px);
 
     & > div {
       display: flex;
@@ -111,8 +128,8 @@ export default styled.div`
         padding: 6px 9px;
         font-size: 1em;
         margin-left: 15px;
-        border: 1px solid #ccc;
-        border-radius: 3px;
+        border: 3px solid #ccc;
+        border-radius: 20px;
         &[disabled] {
           background: #eee;
         }
